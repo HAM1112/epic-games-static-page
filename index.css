@@ -96,6 +96,7 @@ body{
     position: sticky;
     top: 0;
     background-color:  rgb(18, 18, 18);
+    z-index: 2;
 }
 
 .search > .search-div{
@@ -231,6 +232,7 @@ body{
 
 .game-on-sale > div{
     height: 370px;
+    position: relative;
     /* border: 3px solid greenyellow; */
 }
 
@@ -278,7 +280,9 @@ body{
 }
 .second-display > div{
     width: 350px;
+    position: relative;
 }
+
 .second-display > div > h3, .second-display > div > p{
     padding: 10px 20px;
     line-height: 25px;
@@ -330,8 +334,29 @@ body{
 .third-display-bottom img{
     width: 100%;
     border-radius: 5px;
+    z-index: -1;
 }
+
+.third-display-bottom > div:hover span,.second-display > div:hover span,.game-on-sale > div:hover span {
+    
+    display: block;
+}
+
+.plus{
+    position: absolute;
+    padding: 1px 5px;
+    background-color: #000000;
+    border: 1px solid #ffffff;
+    color: #ffffff; 
+    border-radius: 25px;
+    display: none;
+    top: 10px;
+    right: 10px;
+    transition: 0.3;
+}
+
 .third-display-bottom div{
+    position: relative;
     width: 520px;
 }
 .third-display-bottom h4{
@@ -486,3 +511,4 @@ footer img{
     position: absolute;
     right: 50px;
 }
+
