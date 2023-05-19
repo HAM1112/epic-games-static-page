@@ -48,6 +48,10 @@ body{
     justify-content: end;
 }
 
+.left > div:hover, .left > div:active{
+    border-bottom: 5px solid #0078f2;
+    padding-bottom: 12px;
+}
 
 .left > .line{
     border: 1px solid #929292;
